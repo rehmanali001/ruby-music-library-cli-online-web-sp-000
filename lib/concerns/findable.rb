@@ -1,4 +1,5 @@
-module Concerns::Findable
+module Concerns
+  module Findable
 
    def find_by_name(name)
     all.find do |object|
