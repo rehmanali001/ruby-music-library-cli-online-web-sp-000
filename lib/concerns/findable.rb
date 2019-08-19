@@ -1,8 +1,7 @@
 module Concerns
   module Findable
    def find_by_name(name)
-    all.find do |object|
-        object.name == name
+    self.all
    end
 
    def find_or_create_by_name(name)
